@@ -7,6 +7,6 @@
  * @flow
  */
 
-'use strict';
-
-module.exports = require('./server.suspense');
+export type SuspenseThenable = {
+  then(resolve: () => mixed, reject?: () => mixed): mixed,
+};
